@@ -97,6 +97,7 @@ export function HangManGame() {
         {Alphabets.map((alphabet, index) => {
           return (
             <Button
+
               disabled={
                 correctWords.includes(alphabet) ||
                 wrongWords.includes(alphabet) ||
