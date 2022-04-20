@@ -97,7 +97,7 @@ export function HangManGame() {
         {Alphabets.map((alphabet, index) => {
           return (
             <Button
-              className="AlphabetButton"
+
               disabled={
                 correctWords.includes(alphabet) ||
                 wrongWords.includes(alphabet) ||
@@ -114,9 +114,9 @@ export function HangManGame() {
           );
         })}
       </div>
-      <Button className="resetButton" onClick={handleReset}>
+      <button className="resetButton" onClick={handleReset}>
         Reset
-      </Button>
+      </button>
       {Chances === 0 ? <h1>You Lose! The hidden word is "{Word}"</h1> : ""}
       {isGameWon() === "win" ? <h1>You Won!</h1> : ""}
     </div>
