@@ -94,6 +94,7 @@ export function HangManGame() {
         })}
       </div>
       <div className="AlphabetDiv">
+        
         {Alphabets.map((alphabet, index) => {
           return (
             <Button
